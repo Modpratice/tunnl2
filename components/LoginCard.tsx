@@ -25,7 +25,7 @@ export const LoginCard: React.FC<LoginCardProps> = ({ onNavigate }) => {
           <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent rounded-xl opacity-20 pointer-events-none" />
           <div className="bg-gradient-to-r from-[#5a56e0] via-[#7c3aed] to-[#5a56e0] h-14 rounded-xl flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(124,58,237,0.3)] hover:shadow-[0_0_25px_rgba(124,58,237,0.45)] transition-shadow">
             <span className="text-white font-semibold text-lg flex items-center gap-2">
-              Sign in with X
+              Claim Whitelist
               <svg 
                 className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
                 fill="none" 
@@ -46,7 +46,7 @@ export const LoginCard: React.FC<LoginCardProps> = ({ onNavigate }) => {
           className="w-full h-14 rounded-xl border border-white/[0.08] bg-[#0d0d12] hover:bg-[#16161e] transition-colors duration-200 active:scale-[0.98]"
         >
           <span className="text-white font-medium text-[15px]">
-            Additional Login Options
+            Connect Wallet
           </span>
         </button>
       </div>
