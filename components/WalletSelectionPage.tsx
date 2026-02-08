@@ -4,42 +4,79 @@ import { WalletCard } from './WalletCard';
 import { WalletModal } from './WalletModal';
 import { Marquee } from './Marquee';
 
+// Wallet logos (LOCAL)
+import walletConnectLogo from '../assets/logo/walle.jpg';
+import metamaskLogo from '../assets/logo/metamask.jpg';
+import coinbaseLogo from '../assets/logo/coinbase.jpg';
+import trustLogo from '../assets/logo/trust_wallet.jpg';
+import phantomLogo from '../assets/logo/phantom.jpg';
+import rainbowLogo from '../assets/logo/rainbow.jpg';
+import okxLogo from '../assets/logo/okx.jpg';
+import rabbyLogo from '../assets/logo/rabby.jpg';
+import ledgerLogo from '../assets/logo/ledger.jpg';
+import trezorLogo from '../assets/logo/trezor.jpg';
+import safeLogo from '../assets/logo/safe.jpg';
+import argentLogo from '../assets/logo/argent.jpg';
+import zerionLogo from '../assets/logo/zerion.jpg';
+import bitkeepLogo from '../assets/logo/bitkeep.jpg';
+import tahoLogo from '../assets/logo/taho.jpg';
+import backpackLogo from '../assets/logo/backpack.jpg';
+import magicEdenLogo from '../assets/logo/magic-eden.jpg';
+import tonkeeperLogo from '../assets/logo/tonkeeper.jpg';
+import xverseLogo from '../assets/logo/xverse.jpg';
+import bloomLogo from '../assets/logo/bloom.jpg';
+import fireflyLogo from '../assets/logo/firefly.jpg';
+import keplrLogo from '../assets/logo/keplr.jpg';
+import exodusLogo from '../assets/logo/exodus.jpg';
+import binanceLogo from '../assets/logo/binance.jpg';
+import polygonLogo from '../assets/logo/polygon.jpg';
+import suiLogo from '../assets/logo/sui.jpg';
+import solanaLogo from '../assets/logo/solana.jpg';
+import bitcoinLogo from '../assets/logo/bitcoin.jpg';
+import bifrostLogo from '../assets/logo/bifrost.jpg';
+import coin98Logo from '../assets/logo/coin98.jpg';
+import saitamaLogo from '../assets/logo/saitama.jpg';
+import zengoLogo from '../assets/logo/zengo.jpg';
+import unstoppableLogo from '../assets/logo/unstoppable.jpg';
+import valoraLogo from '../assets/logo/valora.jpg';
+import zelcoreLogo from '../assets/logo/zelcore.jpg';
+
 const WALLETS = [
-  { id: 'wallet-connect', title: 'Wallet Connect', domain: 'walletconnect.com', logo: './assets\logo\walle.jpg' },
-  { id: 'metamask', title: 'Metamask', domain: 'metamask.io', logo: 'https://registry.walletconnect.com/api/v1/logo/md/c5643456-611b-41a3-8173-63d11b207500' },
-  { id: 'coinbase', title: 'Coinbase', domain: 'coinbase.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/fd20dc42-2452-4a42-83f4-0a9857213b00' },
-  { id: 'trust', title: 'Trust Wallet', domain: 'trustwallet.com', logo: 'https://github.com/Modpratice/tunnl2/blob/main/assets/logo/trust_wallet.jpg' },
-  { id: 'phantom', title: 'Phantom', domain: 'phantom.app', logo: 'https://registry.walletconnect.com/api/v1/logo/md/a7977d5b-8021-4ba9-9dc6-446a50c67400' },
-  { id: 'rainbow', title: 'Rainbow', domain: 'rainbow.me', logo: 'https://registry.walletconnect.com/api/v1/logo/md/1ae92b26-3d59-4ad2-98e9-0a9857213b00' },
-  { id: 'okx', title: 'OKX Wallet', domain: 'okx.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/971e689d-45f9-486b-a638-0a9857213b00' },
-  { id: 'rabby', title: 'Rabby', domain: 'rabby.io', logo: 'https://registry.walletconnect.com/api/v1/logo/md/ed198260-e13d-498e-89f7-0a9857213b00' },
-  { id: 'ledger', title: 'Ledger Live', domain: 'ledger.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/1917734c-8575-4309-b038-0a9857213b00' },
-  { id: 'trezor', title: 'Trezor', domain: 'trezor.io', logo: 'https://registry.walletconnect.com/api/v1/logo/md/e6c9868e-09a2-4a7b-a2c3-0a9857213b00' },
-  { id: 'safe', title: 'Gnosis Safe', domain: 'safe.global', logo: 'https://registry.walletconnect.com/api/v1/logo/md/225bd710-388d-4f6c-897d-0a9857213b00' },
-  { id: 'argent', title: 'Argent', domain: 'argent.xyz', logo: 'https://registry.walletconnect.com/api/v1/logo/md/cf21952a-285d-446d-9669-0a9857213b00' },
-  { id: 'zerion', title: 'Zerion', domain: 'zerion.io', logo: 'https://registry.walletconnect.com/api/v1/logo/md/ecc55208-c30d-4545-9799-0a9857213b00' },
-  { id: 'bitkeep', title: 'BitKeep', domain: 'bitget.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/3f9720fd-5582-446e-897d-0a9857213b00' },
-  { id: 'taho', title: 'Taho', domain: 'taho.xyz', logo: 'https://registry.walletconnect.com/api/v1/logo/md/9720fd-5582-446e-897d-0a9857213b00' },
-  { id: 'backpack', title: 'Backpack', domain: 'backpack.app', logo: 'https://registry.walletconnect.com/api/v1/logo/md/225bd710-388d-4f6c-897d-0a9857213b00' },
-  { id: 'magic-eden', title: 'Magic Eden', domain: 'magiceden.io', logo: 'https://registry.walletconnect.com/api/v1/logo/md/a7977d5b-8021-4ba9-9dc6-446a50c67400' },
-  { id: 'tonkeeper', title: 'Tonkeeper', domain: 'tonkeeper.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/971e689d-45f9-486b-a638-0a9857213b00' },
-  { id: 'xverse', title: 'XVerse', domain: 'xverse.app', logo: 'https://registry.walletconnect.com/api/v1/logo/md/c5643456-611b-41a3-8173-63d11b207500' },
-  { id: 'bloom', title: 'Bloom', domain: 'bloomwallet.io', logo: 'https://registry.walletconnect.com/api/v1/logo/md/ecc55208-c30d-4545-9799-0a9857213b00' },
-  { id: 'firefly', title: 'Firefly', domain: 'firefly.iota.org', logo: 'https://registry.walletconnect.com/api/v1/logo/md/cf21952a-285d-446d-9669-0a9857213b00' },
-  { id: 'keplr', title: 'Keplr', domain: 'keplr.app', logo: 'https://registry.walletconnect.com/api/v1/logo/md/fd20dc42-2452-4a42-83f4-0a9857213b00' },
-  { id: 'exodus', title: 'Exodus', domain: 'exodus.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/c5643456-611b-41a3-8173-63d11b207500' },
-  { id: 'binance', title: 'Binance Wallet', domain: 'binance.org', logo: 'https://registry.walletconnect.com/api/v1/logo/md/3f9720fd-5582-446e-897d-0a9857213b00' },
-  { id: 'polygon', title: 'Polygon', domain: 'polygon.technology', logo: 'https://registry.walletconnect.com/api/v1/logo/md/a7977d5b-8021-4ba9-9dc6-446a50c67400' },
-  { id: 'sui', title: 'Sui Wallet', domain: 'sui.io', logo: 'https://registry.walletconnect.com/api/v1/logo/md/1ae92b26-3d59-4ad2-98e9-0a9857213b00' },
-  { id: 'solana', title: 'Solana Wallet', domain: 'solana.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/fd20dc42-2452-4a42-83f4-0a9857213b00' },
-  { id: 'bitcoin-wallet', title: 'Bitcoin Wallet', domain: 'bitcoin.org', logo: 'https://registry.walletconnect.com/api/v1/logo/md/ecc55208-c30d-4545-9799-0a9857213b00' },
-  { id: 'bifrost', title: 'Bifrost', domain: 'bifrost.network', logo: 'https://registry.walletconnect.com/api/v1/logo/md/ed198260-e13d-498e-89f7-0a9857213b00' },
-  { id: 'coin98', title: 'Coin98', domain: 'coin98.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/ed198260-e13d-498e-89f7-0a9857213b00' },
-  { id: 'saitama', title: 'Saitama', domain: 'saitamatoken.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/ecc55208-c30d-4545-9799-0a9857213b00' },
-  { id: 'zengo', title: 'ZenGo', domain: 'zengo.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/ecc55208-c30d-4545-9799-0a9857213b00' },
-  { id: 'unstoppable', title: 'Unstoppable', domain: 'unstoppable.money', logo: 'https://registry.walletconnect.com/api/v1/logo/md/a7977d5b-8021-4ba9-9dc6-446a50c67400' },
-  { id: 'valora', title: 'Valora', domain: 'valoraapp.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/fd20dc42-2452-4a42-83f4-0a9857213b00' },
-  { id: 'zelcore', title: 'Zelcore', domain: 'zelcore.io', logo: 'https://registry.walletconnect.com/api/v1/logo/md/c5643456-611b-41a3-8173-63d11b207500' }
+  { id: 'wallet-connect', title: 'Wallet Connect', domain: 'walletconnect.com', logo: walletConnectLogo },
+  { id: 'metamask', title: 'Metamask', domain: 'metamask.io', logo: metamaskLogo },
+  { id: 'coinbase', title: 'Coinbase', domain: 'coinbase.com', logo: coinbaseLogo },
+  { id: 'trust', title: 'Trust Wallet', domain: 'trustwallet.com', logo: trustLogo },
+  { id: 'phantom', title: 'Phantom', domain: 'phantom.app', logo: phantomLogo },
+  { id: 'rainbow', title: 'Rainbow', domain: 'rainbow.me', logo: rainbowLogo },
+  { id: 'okx', title: 'OKX Wallet', domain: 'okx.com', logo: okxLogo },
+  { id: 'rabby', title: 'Rabby', domain: 'rabby.io', logo: rabbyLogo },
+  { id: 'ledger', title: 'Ledger Live', domain: 'ledger.com', logo: ledgerLogo },
+  { id: 'trezor', title: 'Trezor', domain: 'trezor.io', logo: trezorLogo },
+  { id: 'safe', title: 'Gnosis Safe', domain: 'safe.global', logo: safeLogo },
+  { id: 'argent', title: 'Argent', domain: 'argent.xyz', logo: argentLogo },
+  { id: 'zerion', title: 'Zerion', domain: 'zerion.io', logo: zerionLogo },
+  { id: 'bitkeep', title: 'BitKeep', domain: 'bitget.com', logo: bitkeepLogo },
+  { id: 'taho', title: 'Taho', domain: 'taho.xyz', logo: tahoLogo },
+  { id: 'backpack', title: 'Backpack', domain: 'backpack.app', logo: backpackLogo },
+  { id: 'magic-eden', title: 'Magic Eden', domain: 'magiceden.io', logo: magicEdenLogo },
+  { id: 'tonkeeper', title: 'Tonkeeper', domain: 'tonkeeper.com', logo: tonkeeperLogo },
+  { id: 'xverse', title: 'XVerse', domain: 'xverse.app', logo: xverseLogo },
+  { id: 'bloom', title: 'Bloom', domain: 'bloomwallet.io', logo: bloomLogo },
+  { id: 'firefly', title: 'Firefly', domain: 'firefly.iota.org', logo: fireflyLogo },
+  { id: 'keplr', title: 'Keplr', domain: 'keplr.app', logo: keplrLogo },
+  { id: 'exodus', title: 'Exodus', domain: 'exodus.com', logo: exodusLogo },
+  { id: 'binance', title: 'Binance Wallet', domain: 'binance.org', logo: binanceLogo },
+  { id: 'polygon', title: 'Polygon', domain: 'polygon.technology', logo: polygonLogo },
+  { id: 'sui', title: 'Sui Wallet', domain: 'sui.io', logo: suiLogo },
+  { id: 'solana', title: 'Solana Wallet', domain: 'solana.com', logo: solanaLogo },
+  { id: 'bitcoin-wallet', title: 'Bitcoin Wallet', domain: 'bitcoin.org', logo: bitcoinLogo },
+  { id: 'bifrost', title: 'Bifrost', domain: 'bifrost.network', logo: bifrostLogo },
+  { id: 'coin98', title: 'Coin98', domain: 'coin98.com', logo: coin98Logo },
+  { id: 'saitama', title: 'Saitama', domain: 'saitamatoken.com', logo: saitamaLogo },
+  { id: 'zengo', title: 'ZenGo', domain: 'zengo.com', logo: zengoLogo },
+  { id: 'unstoppable', title: 'Unstoppable', domain: 'unstoppable.money', logo: unstoppableLogo },
+  { id: 'valora', title: 'Valora', domain: 'valoraapp.com', logo: valoraLogo },
+  { id: 'zelcore', title: 'Zelcore', domain: 'zelcore.io', logo: zelcoreLogo }
 ];
 
 export const WalletSelectionPage: React.FC = () => {
