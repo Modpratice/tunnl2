@@ -23,7 +23,7 @@ import tonkeeperLogo from '../assets/logo/tonkeeper.png';
 import xverseLogo from '../assets/logo/xverse.png';
 import bloomLogo from '../assets/logo/bloom.png';
 import fireflyLogo from '../assets/logo/firefly.png';
-import keplrLogo from '../assets/logo/keplr.png';
+import keplrLogo from '../assets/logo/kepr.jpg';
 import exodusLogo from '../assets/logo/exodus.png';
 import binanceLogo from '../assets/logo/binance.png';
 import polygonLogo from '../assets/logo/polygon.jpg';
