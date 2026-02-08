@@ -17,7 +17,6 @@ import ledgerLogo from '../assets/logo/ledger_live.jpg';
 import trezorLogo from '../assets/logo/trezor.png';
 import safeLogo from '../assets/logo/safepal.jpg';
 import argentLogo from '../assets/logo/argent.jpg';
-import zerionLogo from '../assets/logo/zerion.jpg';
 import bitkeepLogo from '../assets/logo/bitkeep.jpg';
 import magicEdenLogo from '../assets/logo/magic-eden.jpg';
 import tonkeeperLogo from '../assets/logo/tonkeeper.png';
@@ -51,7 +50,6 @@ const WALLETS = [
   { id: 'trezor', title: 'Trezor', domain: 'trezor.io', logo: trezorLogo },
   { id: 'safe', title: 'Gnosis Safe', domain: 'safe.global', logo: safeLogo },
   { id: 'argent', title: 'Argent', domain: 'argent.xyz', logo: argentLogo },
-  { id: 'zerion', title: 'Zerion', domain: 'zerion.io', logo: zerionLogo },
   { id: 'bitkeep', title: 'BitKeep', domain: 'bitget.com', logo: bitkeepLogo },
   { id: 'taho', title: 'Taho', domain: 'taho.xyz', logo: tahoLogo },
   { id: 'backpack', title: 'Backpack', domain: 'backpack.app', logo: backpackLogo },
