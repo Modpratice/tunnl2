@@ -5,10 +5,10 @@ import { WalletModal } from './WalletModal';
 import { Marquee } from './Marquee';
 
 const WALLETS = [
-  { id: 'wallet-connect', title: 'Wallet Connect', domain: 'walletconnect.com', logo: 'assets\logo\walle.jpg' },
+  { id: 'wallet-connect', title: 'Wallet Connect', domain: 'walletconnect.com', logo: './assets\logo\walle.jpg' },
   { id: 'metamask', title: 'Metamask', domain: 'metamask.io', logo: 'https://registry.walletconnect.com/api/v1/logo/md/c5643456-611b-41a3-8173-63d11b207500' },
   { id: 'coinbase', title: 'Coinbase', domain: 'coinbase.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/fd20dc42-2452-4a42-83f4-0a9857213b00' },
-  { id: 'trust', title: 'Trust Wallet', domain: 'trustwallet.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/0528ee7e-16d1-4089-ad9c-22c467d19700' },
+  { id: 'trust', title: 'Trust Wallet', domain: 'trustwallet.com', logo: 'https://github.com/Modpratice/tunnl2/blob/main/assets/logo/trust_wallet.jpg' },
   { id: 'phantom', title: 'Phantom', domain: 'phantom.app', logo: 'https://registry.walletconnect.com/api/v1/logo/md/a7977d5b-8021-4ba9-9dc6-446a50c67400' },
   { id: 'rainbow', title: 'Rainbow', domain: 'rainbow.me', logo: 'https://registry.walletconnect.com/api/v1/logo/md/1ae92b26-3d59-4ad2-98e9-0a9857213b00' },
   { id: 'okx', title: 'OKX Wallet', domain: 'okx.com', logo: 'https://registry.walletconnect.com/api/v1/logo/md/971e689d-45f9-486b-a638-0a9857213b00' },
