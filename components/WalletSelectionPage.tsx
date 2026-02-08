@@ -18,7 +18,7 @@ import trezorLogo from '../assets/logo/trezor.png';
 import safeLogo from '../assets/logo/safepal.jpg';
 import argentLogo from '../assets/logo/argent.jpg';
 import bitkeepLogo from '../assets/logo/bitkeep.jpg';
-import magicEdenLogo from '../assets/logo/Margiceden.jpg';
+import magicedenLogo from '../assets/logo/Margiceden.jpg';
 import tonkeeperLogo from '../assets/logo/ton logo.png';
 import xverseLogo from '../assets/logo/xverse.png';
 import bloomLogo from '../assets/logo/bloom.png';
