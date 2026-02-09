@@ -5,7 +5,7 @@ import { WalletModal } from './WalletModal';
 import { Marquee } from './Marquee';
 
 // Wallet logos (LOCAL)
-import walletConnectLogo from '../assets/logo/walle.jpg';
+import walletConnectLogo from '../assets/logo/wallet-connect.jpg';
 import metamaskLogo from '../assets/logo/metamask.jpg';
 import coinbaseLogo from '../assets/logo/coinbase.png';
 import trustLogo from '../assets/logo/trust_wallet.jpg';
@@ -18,11 +18,12 @@ import trezorLogo from '../assets/logo/trezor.png';
 import safeLogo from '../assets/logo/safepal.jpg';
 import argentLogo from '../assets/logo/argent.jpg';
 import bitkeepLogo from '../assets/logo/bitkeep.jpg';
-import magicedenLogo from '../assets/logo/Margiceden.jpg';
+import backpackLogo from '../assets/logo/backpackwallet.jpg';
+import magicedenLogo from '../assets/logo/magiceden.jpg';
 import tonkeeperLogo from '../assets/logo/ton logo.png';
 import xverseLogo from '../assets/logo/xverse.png';
 import bloomLogo from '../assets/logo/bloom.png';
-import fireflyLogo from '../assets/logo/firefly logo.png';
+import fireflyLogo from '../assets/logo/firefly logo.jpg';
 import keplrLogo from '../assets/logo/kepr.jpg';
 import exodusLogo from '../assets/logo/exodus.png';
 import binanceLogo from '../assets/logo/binance.png';
